@@ -1,0 +1,25 @@
+<div class=" d-flex justify-content-end">
+    <button [routerLink]="['./add']" class="btn btn-primary mr-5 mt-2">Add Trainee</button>
+
+</div>
+
+
+<div>
+    <ul class="list-group">
+        <li *ngFor='let trainee of trainees' class="list-group-item border-end50 ">
+            {{trainee.name}}
+            <div *ngFor='let d of trainee.session' class="d-flex justify-content-around ">
+                <div class="border p-2">
+                    {{d.date}}
+                </div>
+                <div>
+                    {{d.contents}}
+                </div>
+                <div>
+                    {{d.feedback}}
+                </div>
+
+            </div>
+        </li>
+    </ul>
+</div>

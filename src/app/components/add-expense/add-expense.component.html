@@ -1,0 +1,32 @@
+<section class="ml-5 pt-5 sample-app-content">
+
+    <form [formGroup]="addExpense" (ngSubmit)="onSubmit()">
+        <div class="d-flex justify-content-between">
+            <label>Year</label>
+            <input type="text" formControlName="year">
+        </div>
+        <div>
+            <label>Month</label>
+            <input type="text" formControlName="month">
+        </div>
+        <div>
+            <label>Amount</label>
+            <input type="text" formControlName="amount">
+        </div>
+        <div>
+            <label>Concern</label>
+            <input type="text" formControlName="concern">
+        </div>
+        <div>
+            <label>Due Date</label>
+            <input type="text" formControlName="dueDate">
+        </div>
+        <div>
+            <label>Status</label>
+            <input type="text" formControlName="status">
+        </div>
+        <div>
+            <button type="submit" [disabled]="!addExpense.valid">Submit</button>
+        </div>
+    </form>
+</section>

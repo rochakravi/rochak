@@ -1,0 +1,33 @@
+<p>add-trainee works!</p>
+<section class="sample-app-content">
+    <h1>Reactive Form Example:</h1>
+    <form [formGroup]="add" (ngSubmit)="onSubmit()">
+        <p>
+            <label>Name</label>
+            <input type="text" formControlName="name">
+        </p>
+        <p>
+            <label>course</label>
+            <input type="text" formControlName="course">
+        </p>
+        <p>
+            <label>Estimated Cost</label>
+            <input type="text" formControlName="estimated">
+        </p>
+        <p>
+            <label>Received Amount</label>
+            <input type="text" formControlName="received">
+        </p>
+        <p>
+            <label>Status</label>
+            <input type="text" formControlName="status">
+        </p>
+        <p>
+            <label>Admission Date</label>
+            <input type="text" formControlName="reg_date">
+        </p>
+        <p>
+            <button type="submit" [disabled]="!add.valid">Submit</button>
+        </p>
+    </form>
+</section>

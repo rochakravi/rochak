@@ -1,0 +1,21 @@
+
+<div class="d-flex container-fluid">
+    <div class="container-fluid border border-success">
+        <ul>
+            <li *ngFor="let er of earnings" class="d-flex justify-content-between">
+                <span>{{er.amount}}</span>
+                <span>{{er.concern}}</span>
+                <span>{{er.status}}</span>
+            </li>
+        </ul>
+    </div>
+    <div class="container-fluid border border-danger">
+   
+    <ul>
+        <li *ngFor="let ex of expenses">
+            <span>{{ex.amount}}</span>
+            <span>{{ex.concern}}</span>
+            <span>{{ex.status}}</span></li>
+    </ul>
+    </div>
+</div>
