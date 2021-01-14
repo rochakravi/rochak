@@ -9,8 +9,21 @@ import {MyService } from '../../../service/my.service'
 export class PlannerComponent implements OnInit {
   earnings ;
   expenses ;
+  selectedPersonId;
+  people;
 
-  constructor(private service : MyService) { }
+  constructor(private service : MyService) { 
+    this.people  = [
+      {
+         'name': 'Karyn Wright'
+      },
+      {
+          
+          'name': 'Rochelle Estes'
+      }
+      
+  ]
+  }
 
   ngOnInit(): void {
     this.service.showEarnings().subscribe(data=>{

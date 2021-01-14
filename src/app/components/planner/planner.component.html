@@ -1,5 +1,11 @@
 
 <div class="d-flex container-fluid">
+    <ng-select [items]="people"
+           bindLabel="name"
+           autofocus
+           bindValue="id"
+           [(ngModel)]="selectedPersonId">
+    </ng-select>
     <div class="container-fluid border border-success">
         <ul>
             <li *ngFor="let er of earnings" class="d-flex justify-content-between">

@@ -13,6 +13,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AddEarningsComponent } from './components/add-earnings/add-earnings.component';
 import { AddExpenseComponent } from './components/add-expense/add-expense.component';
 import { AgricultureComponent } from './components/agriculture/agriculture.component';
+import { MyNewComponent } from './my-new/my-new.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { AgricultureComponent } from './components/agriculture/agriculture.compo
     PlannerComponent,
     AddEarningsComponent,
     AddExpenseComponent,
-    AgricultureComponent
+    AgricultureComponent,
+    MyNewComponent
   ],
   imports: [
     BrowserModule,

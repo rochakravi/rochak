@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "rochak"
+    }
+  },
+  "defaultProject": "rochak",
+  "cli": {
+    "analytics": "feafce1a-c60f-4acd-be19-0d8ca8b9071a"
+  }
 }
